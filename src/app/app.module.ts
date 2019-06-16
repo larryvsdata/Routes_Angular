@@ -16,6 +16,7 @@ import {AuthService} from './auth.service';
 import {AuthGuard} from './auth-guard.service';
 import {CanDeactivate} from '@angular/router';
 import {CanDeactivateGuard} from './servers/edit-server/can-deactivate-guard.service';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 const appRoutes: Routes =[
@@ -42,7 +43,8 @@ const appRoutes: Routes =[
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
